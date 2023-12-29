@@ -35,8 +35,8 @@ const Pagination = ({count}) => {
 
   return (
     <div className='flex flex-row items-center gap-3 mt-5 justify-center'>
-      {totalPagesArray.map((item) => (
-        <button onClick={() => setPage(item)} className={page === item ? selectedPage : notSelectedPage}>{item}</button>
+      {totalPagesArray.map((item, index) => (
+        <button key={index} onClick={() => setPage(item)} className={page === item ? selectedPage : notSelectedPage}>{item}</button>
       ))}
     </div>
   );

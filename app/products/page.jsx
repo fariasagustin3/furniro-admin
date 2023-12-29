@@ -44,10 +44,12 @@ export default async function ProductsPage({ searchParams }) {
           <div className='flex flex-col gap-3'>
             {products?.map((product) => (
               <ProductItem
+                key={product._id}
                 title={product.title}
                 stock={product.stock}
                 price={product.price}
                 img={product.img}
+                id={product.id}
               />
             ))}
           </div>
