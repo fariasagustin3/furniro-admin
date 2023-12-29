@@ -67,7 +67,7 @@ const EditProductPage = async ({ params }) => {
           {/* row */}
           <div className='flex flex-row gap-5 w-full justify-between'>
             {/* input name id value product id hidden */}
-            <input type="text" name="id" value={product?.id} className='hidden border-[1px] border-[#9F9F9F] rounded-lg py-5 focus:outline-none px-5 text-xs' />
+            <input type="text" name="id" value={product?.id} className='hidden' />
             {/* title */}
             <div className='flex flex-col gap-3 w-full'>
               <label className='text-sm font-semibold'>Title</label>
