@@ -30,7 +30,7 @@ const EditProductForm = ({id}) => {
       toast.success("Product updated successfully")
       setTimeout(() => {
         replace("/products")
-      }, 3000)
+      }, 1000)
     }
 
   }
@@ -92,7 +92,7 @@ const EditProductForm = ({id}) => {
         </div>
         <button type="submit" className='w-max py-3 px-16 bg-[#B88E2F] text-white text-xs font-light rounded-bl-[50px]'>Submit</button>
       </form>
-      <ToastContainer />
+      <ToastContainer autoClose={1000} />
     </div>
   );
 }
