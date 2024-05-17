@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
   return (
     <div className='flex flex-row w-screen h-full'>
       {/* sidebar */}
-        <div className='bg-[#4880FF] w-full flex flex-col flex-1'>
-      <div className='flex-1 fixed top-0 h-full'>
+      <div className='bg-[#4880FF] w-full flex flex-col flex-1'>
+        <div className='flex-1 fixed top-0'>
           <div className='mx-7 flex-1'>
             <h2 className='my-5 text-center text-2xl font-semibold text-white'>FURNIRO ADMIN</h2>
             <hr />
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
       </div>
-      <div className='w-screen h-full flex flex-col flex-[4] bg-[#D5D5D5]'>
+      <div className='w-screen h-full flex flex-col flex-[4] bg-[#e6e6e6]'>
         {children}
       </div>
     </div>
