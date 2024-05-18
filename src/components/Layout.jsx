@@ -10,10 +10,10 @@ const Layout = ({ children }) => {
   }, [pathname])
 
   return (
-    <div className='flex flex-row w-screen h-full'>
+    <div className='flex flex-row w-full h-full'>
       {/* sidebar */}
       <div className='bg-[#4880FF] w-full flex flex-col flex-1'>
-        <div className='flex-1 fixed top-0'>
+        <div className='flex-1 h-full fixed top-0'>
           <div className='mx-7 flex-1'>
             <h2 className='my-5 text-center text-2xl font-semibold text-white'>FURNIRO ADMIN</h2>
             <hr />
