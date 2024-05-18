@@ -64,32 +64,32 @@ const DashboardPage = () => {
         {/* last users */}
         <div className="bg-white px-7 py-4 rounded-lg shadow-xl w-full mb-5">
           <h1 className="text-base font-bold mb-4">Lastest Users</h1>
-          <div className="flex flex-col gap-5">
+          <tbody className="flex flex-col gap-5">
             <hr />
-            <div className="flex flex-row items-center justify-between">
-              <span className="font-medium text-sm">Agustin Farias</span>
-              <span className="font-medium text-sm">agus@gmail.com</span>
-              <span className="font-medium text-sm">27 May 2015</span>
-              <span className="font-medium text-sm">Admin</span>
-              <span className="font-bold text-sm bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</span>
-            </div>
+            <tr className="flex flex-row items-center justify-between">
+              <td className="font-medium text-sm text-center">Agustin Farias</td>
+              <td className="font-medium text-sm text-center">xqfss@gmail.com</td>
+              <td className="font-medium text-sm text-center">27 May 2015</td>
+              <td className="font-medium text-sm text-center">Admin</td>
+              <td className="font-bold text-sm text-center bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</td>
+            </tr>
             <hr />
-            <div className="flex flex-row items-center justify-between">
-              <span className="font-medium text-sm">Agustin Farias</span>
-              <span className="font-medium text-sm">agus@gmail.com</span>
-              <span className="font-medium text-sm">27 May 2015</span>
-              <span className="font-medium text-sm">Admin</span>
-              <span className="font-bold text-sm bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</span>
-            </div>
+            <tr className="flex flex-row items-center justify-between">
+              <td className="font-medium text-sm text-center">John Doe</td>
+              <td className="font-medium text-sm text-center">john@gmail.com</td>
+              <td className="font-medium text-sm text-center">27 May 2018</td>
+              <td className="font-medium text-sm text-center">Not Admin</td>
+              <td className="font-bold text-sm text-center bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</td>
+            </tr>
             <hr />
-            <div className="flex flex-row items-center justify-between">
-              <span className="font-medium text-sm">Agustin Farias</span>
-              <span className="font-medium text-sm">agus@gmail.com</span>
-              <span className="font-medium text-sm">27 May 2015</span>
-              <span className="font-medium text-sm">Admin</span>
-              <span className="font-bold text-sm bg-red-400 px-3 py-1 text-red-800 rounded-full">Inactive</span>
-            </div>
-          </div>
+            <tr className="flex flex-row items-center justify-between">
+              <td className="font-medium text-sm text-center">Jane Austen</td>
+              <td className="font-medium text-sm text-center">jane@gmail.com</td>
+              <td className="font-medium text-sm text-center">27 May 2005</td>
+              <td className="font-medium text-sm text-center">Not Admin</td>
+              <td className="font-bold text-sm text-center bg-red-400 px-3 py-1 text-red-800 rounded-full">Inactive</td>
+            </tr>
+          </tbody>
         </div>
 
         {/* last products */}
