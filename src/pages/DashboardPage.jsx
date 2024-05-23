@@ -64,73 +64,112 @@ const DashboardPage = () => {
         {/* last users */}
         <div className="bg-white px-7 py-4 rounded-lg shadow-xl w-full mb-5">
           <h1 className="text-base font-bold mb-4">Lastest Users</h1>
-          <tbody className="flex flex-col gap-5">
-            <hr />
-            <tr className="flex flex-row items-center justify-between">
-              <td className="font-medium text-sm text-center">Agustin Farias</td>
-              <td className="font-medium text-sm text-center">xqfss@gmail.com</td>
-              <td className="font-medium text-sm text-center">27 May 2015</td>
-              <td className="font-medium text-sm text-center">Admin</td>
-              <td className="font-bold text-sm text-center bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</td>
-            </tr>
-            <hr />
-            <tr className="flex flex-row items-center justify-between">
-              <td className="font-medium text-sm text-center">John Doe</td>
-              <td className="font-medium text-sm text-center">john@gmail.com</td>
-              <td className="font-medium text-sm text-center">27 May 2018</td>
-              <td className="font-medium text-sm text-center">Not Admin</td>
-              <td className="font-bold text-sm text-center bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</td>
-            </tr>
-            <hr />
-            <tr className="flex flex-row items-center justify-between">
-              <td className="font-medium text-sm text-center">Jane Austen</td>
-              <td className="font-medium text-sm text-center">jane@gmail.com</td>
-              <td className="font-medium text-sm text-center">27 May 2005</td>
-              <td className="font-medium text-sm text-center">Not Admin</td>
-              <td className="font-bold text-sm text-center bg-red-400 px-3 py-1 text-red-800 rounded-full">Inactive</td>
-            </tr>
-          </tbody>
+          <table className="w-full">
+            <tbody>
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">Agustin Farias</td>
+                <td className="font-medium text-sm text-start">xqfss@gmail.com</td>
+                <td className="font-medium text-sm text-start">27 May 2015</td>
+                <td className="font-medium text-sm text-start">Admin</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-green-400 text-green-800 rounded-full px-3 py-2">Active</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">John Doe</td>
+                <td className="font-medium text-sm text-start">john@gmail.com</td>
+                <td className="font-medium text-sm text-start">27 May 2018</td>
+                <td className="font-medium text-sm text-start">Not Admin</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-green-400 text-green-800 rounded-full px-3 py-2">Active</span>
+                  </div>
+                </td>
+              </tr>
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">Jane Austen</td>
+                <td className="font-medium text-sm text-start">jane@gmail.com</td>
+                <td className="font-medium text-sm text-start">27 May 2005</td>
+                <td className="font-medium text-sm text-start">Not Admin</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-red-400 text-red-800 rounded-full px-3 py-2">Inactive</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
         {/* last products */}
         <div className="bg-white px-7 py-4 rounded-lg shadow-xl w-full mb-5">
           <h1 className="text-base font-bold mb-4">Lastest Products</h1>
-          <div className="flex flex-col gap-5">
-            <hr />
-            <div className="flex flex-row items-center justify-between">
-              <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
-              <span className="font-semibold text-sm">Modern Sofa</span>
-              <span className="font-medium text-sm">$800</span>
-              <span className="font-medium text-sm">27 May 2020</span>
-              <span className="font-medium text-sm">15</span>
-              <span className="font-medium text-sm">Living Room</span>
-              <span className="font-bold text-sm bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</span>
-            </div>
-            <hr />
-            <div className="flex flex-row items-center justify-between">
-              <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
-              <span className="font-semibold text-sm">Modern Sofa</span>
-              <span className="font-medium text-sm">$800</span>
-              <span className="font-medium text-sm">27 May 2020</span>
-              <span className="font-medium text-sm">15</span>
-              <span className="font-medium text-sm">Living Room</span>
-              <span className="font-bold text-sm bg-green-400 px-3 py-1 text-green-800 rounded-full">Active</span>
-            </div>
-            <hr />
-            <div className="flex flex-row items-center justify-between">
-            <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
-              <span className="font-semibold text-sm">Modern Sofa</span>
-              <span className="font-medium text-sm">$800</span>
-              <span className="font-medium text-sm">27 May 2020</span>
-              <span className="font-medium text-sm">15</span>
-              <span className="font-medium text-sm">Living Room</span>
-              <span className="font-bold text-sm bg-red-400 px-3 py-1 text-red-800 rounded-full">Inactive</span>
-            </div>
-          </div>
+          <table className="w-full">
+            <tbody>
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">
+                  <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
+                </td>
+                <td className="font-medium text-sm text-start">Modern Sofa</td>
+                <td className="font-medium text-sm text-start">$800</td>
+                <td className="font-medium text-sm text-start">27 May 2020</td>
+                <td className="font-medium text-sm text-start">15 units</td>
+                <td className="font-medium text-sm text-start">Living Room</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-green-400 text-green-800 rounded-full px-3 py-2">Active</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">
+                  <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
+                </td>
+                <td className="font-medium text-sm text-start">Modern Sofa</td>
+                <td className="font-medium text-sm text-start">$800</td>
+                <td className="font-medium text-sm text-start">27 May 2020</td>
+                <td className="font-medium text-sm text-start">15 units</td>
+                <td className="font-medium text-sm text-start">Living Room</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-green-400 text-green-800 rounded-full px-3 py-2">Active</span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr className="border-b-[1px]">
+                <td className="font-medium text-sm text-start py-5">
+                  <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
+                </td>
+                <td className="font-medium text-sm text-start">Modern Sofa</td>
+                <td className="font-medium text-sm text-start">$800</td>
+                <td className="font-medium text-sm text-start">27 May 2020</td>
+                <td className="font-medium text-sm text-start">15 units</td>
+                <td className="font-medium text-sm text-start">Living Room</td>
+                <td className="font-bold text-sm text-start ">
+                  <div>
+                    <span className="bg-red-400 text-red-800 rounded-full px-3 py-2">Inactive</span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </Layout>
   )
+  {/* <div className="flex flex-row items-center justify-between">
+    <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
+    <span className="font-semibold text-sm">Modern Sofa</span>
+    <span className="font-medium text-sm">$800</span>
+    <span className="font-medium text-sm">27 May 2020</span>
+    <span className="font-medium text-sm">15</span>
+    <span className="font-medium text-sm">Living Room</span>
+    <span className="font-bold text-sm bg-red-400 px-3 py-1 text-red-800 rounded-full">Inactive</span>
+  </div> */}
 }
 
 export default DashboardPage
