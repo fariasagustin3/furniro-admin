@@ -6,9 +6,7 @@ const CategoriesPage = () => {
 
   return (
     <Layout>
-      <div className="w-full h-screen pb-10 px-10">
-
-
+      <div className="w-full h-screen px-10 pb-10 overflow-auto">
         <h1 className="font-medium text-md text-[#202224]">Categories</h1>
         <div className="h-full">
 

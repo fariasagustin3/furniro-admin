@@ -6,9 +6,7 @@ const OrdersPage = () => {
 
   return (
     <Layout>
-      <div className="w-full h-screen pb-10 px-10">
-
-
+      <div className="w-full h-screen px-10 pb-10 overflow-auto">
         <h1 className="font-medium text-md text-[#202224]">Orders</h1>
         <div className="h-full">
 
@@ -55,7 +53,7 @@ const OrdersPage = () => {
           </div> {/* end filters */}
 
           {/* table */}
-          <div className='w-full bg-white mt-5 pb-5 rounded-md shadow-2xl'>
+          <div className='w-full bg-white mt-5  rounded-md shadow-2xl'>
             <table className='w-full'>
               <thead>
                 <tr className='border-b-[1px]'>
