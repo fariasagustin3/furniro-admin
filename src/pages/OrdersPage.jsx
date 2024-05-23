@@ -48,12 +48,15 @@ const OrdersPage = () => {
                   placeholder='Search'
                   name="search"
                 />
+                <Link to="/orders/create">
+                  <button className='bg-green-500 font-semibold text-white px-5 py-2 text-xs rounded-md'>CREATE</button>
+                </Link>
               </div>
             </div>
           </div> {/* end filters */}
 
           {/* table */}
-          <div className='w-full bg-white mt-5  rounded-md shadow-2xl'>
+          <div className='w-full bg-white mt-5 pb-5 rounded-md shadow-2xl'>
             <table className='w-full'>
               <thead>
                 <tr className='border-b-[1px]'>
@@ -99,7 +102,7 @@ const OrdersPage = () => {
                   <td className='text-center text-sm font-semibold'>$4600</td>
                   <td>
                     <div className="flex items-center justify-center">
-                    <span className='font-bold text-sm bg-yellow-400 px-3 py-1 text-yellow-800 rounded-full'>Pending</span>
+                      <span className='font-bold text-sm bg-yellow-400 px-3 py-1 text-yellow-800 rounded-full'>Pending</span>
                     </div>
                   </td>
                   <td>

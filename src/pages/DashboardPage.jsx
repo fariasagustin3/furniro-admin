@@ -66,7 +66,7 @@ const DashboardPage = () => {
           <h1 className="text-base font-bold mb-4">Lastest Users</h1>
           <table className="w-full">
             <tbody>
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">Agustin Farias</td>
                 <td className="font-medium text-sm text-start">xqfss@gmail.com</td>
                 <td className="font-medium text-sm text-start">27 May 2015</td>
@@ -77,7 +77,7 @@ const DashboardPage = () => {
                   </div>
                 </td>
               </tr>
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">John Doe</td>
                 <td className="font-medium text-sm text-start">john@gmail.com</td>
                 <td className="font-medium text-sm text-start">27 May 2018</td>
@@ -88,7 +88,7 @@ const DashboardPage = () => {
                   </div>
                 </td>
               </tr>
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">Jane Austen</td>
                 <td className="font-medium text-sm text-start">jane@gmail.com</td>
                 <td className="font-medium text-sm text-start">27 May 2005</td>
@@ -108,7 +108,7 @@ const DashboardPage = () => {
           <h1 className="text-base font-bold mb-4">Lastest Products</h1>
           <table className="w-full">
             <tbody>
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">
                   <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
                 </td>
@@ -124,7 +124,7 @@ const DashboardPage = () => {
                 </td>
               </tr>
 
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">
                   <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
                 </td>
@@ -140,7 +140,7 @@ const DashboardPage = () => {
                 </td>
               </tr>
 
-              <tr className="border-b-[1px]">
+              <tr className="border-t-[1px] border-gray-400">
                 <td className="font-medium text-sm text-start py-5">
                   <img src="/product.jpg" alt="" className="w-16 h-16 rounded-md" />
                 </td>

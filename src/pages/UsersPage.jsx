@@ -46,6 +46,9 @@ const UsersPage = () => {
                   placeholder='Search'
                   name="search"
                 />
+                <Link to="/users/create">
+                  <button className='bg-green-500 font-semibold text-white px-5 py-2 text-xs rounded-md'>CREATE</button>
+                </Link>
               </div>
             </div>
           </div> {/* end filters */}

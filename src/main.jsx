@@ -10,6 +10,10 @@ import ProductsPage from './pages/ProductsPage';
 import CategoriesPage from './pages/CategoriesPage';
 import UsersPage from './pages/UsersPage';
 import OrdersPage from './pages/OrdersPage';
+import CreateProductPage from './pages/create/CreateProductPage';
+import CreateCategoryPage from './pages/create/CreateCategoryPage';
+import CreateUserPage from './pages/create/CreateUserPage';
+import CreateOrderPage from './pages/create/CreateOrderPage';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +35,22 @@ const router = createBrowserRouter([
   {
     path: "/orders",
     element: <OrdersPage />,
+  },
+  {
+    path: "/products/create",
+    element: <CreateProductPage />,
+  },
+  {
+    path: "/categories/create",
+    element: <CreateCategoryPage />,
+  },
+  {
+    path: "/users/create",
+    element: <CreateUserPage />,
+  },
+  {
+    path: "/orders/create",
+    element: <CreateOrderPage />,
   },
 ]);
 
