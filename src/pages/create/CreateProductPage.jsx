@@ -116,7 +116,7 @@ const CreateProductPage = () => {
               <input
                 type="text"
                 name="title"
-                input={input.title}
+                value={input.title}
                 id="title"
                 onChange={handleInputChange}
                 className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -129,7 +129,7 @@ const CreateProductPage = () => {
                 <input
                   type="number"
                   name="price"
-                  input={input.price}
+                  value={input.price}
                   id="price"
                   onChange={handleInputChange}
                   className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -141,7 +141,7 @@ const CreateProductPage = () => {
                 <input
                   type="number"
                   name="stock"
-                  input={input.stock}
+                  value={input.stock}
                   id="stock"
                   onChange={handleInputChange}
                   className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -171,7 +171,7 @@ const CreateProductPage = () => {
               <input
                 type="text"
                 name="SKU"
-                input={input.SKU}
+                value={input.SKU}
                 id="SKU"
                 onChange={handleInputChange}
                 className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -198,7 +198,7 @@ const CreateProductPage = () => {
               <input
                 type="number"
                 name="discount"
-                input={input.discount}
+                value={input.discount}
                 id="discount"
                 onChange={handleInputChange}
                 className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -228,7 +228,7 @@ const CreateProductPage = () => {
                 type="file"
                 accept='image/png, image/jpeg, image/jpg'
                 name="image"
-                input={input.image}
+                value={input.image}
                 id="image"
                 onChange={handleInputImage}
                 className='bg-transparent border-[1px] border-slate-600 py-[9px] px-4 text-xs focus:outline-none'
@@ -239,7 +239,7 @@ const CreateProductPage = () => {
               <input
                 type="text"
                 name="colors"
-                input={input.colors}
+                value={input.colors}
                 id="colors"
                 onChange={handleInputChange}
                 className='bg-transparent border-[1px] border-slate-600 py-3 px-4 text-xs focus:outline-none'
@@ -251,7 +251,7 @@ const CreateProductPage = () => {
               <input
                 type="checkbox"
                 name="trending"
-                input={input.trending}
+                value={input.trending}
                 onChange={handleCheckboxChange}
                 id="trending"
                 className='w-10 h-10 self-center'
