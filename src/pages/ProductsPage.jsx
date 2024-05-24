@@ -46,7 +46,7 @@ const ProductsPage = () => {
                 placeholder='Search'
                 name="search"
               />
-              <Link to="/products/create">
+              <Link to="/product/create">
                 <button className='bg-green-500 font-semibold text-white px-5 py-2 text-xs rounded-md'>CREATE</button>
               </Link>
             </div>

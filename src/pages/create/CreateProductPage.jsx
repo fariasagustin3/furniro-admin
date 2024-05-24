@@ -187,7 +187,7 @@ const CreateProductPage = () => {
                 id="category"
                 onChange={handleInputChange}
               >
-                <option disabled selected>Select a category</option>
+                <option disabled value="">Select a category</option>
                 <option value="Living Room">Living Room</option>
                 <option value="Bathroom">Bathroom</option>
                 <option value="Bedroom">Bedroom</option>

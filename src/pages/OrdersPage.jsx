@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Layout from "../components/Layout"
+import { Link } from "react-router-dom/dist"
 
 const OrdersPage = () => {
   const [currentPage, setCurrentPage] = useState(1)
@@ -48,7 +49,7 @@ const OrdersPage = () => {
                   placeholder='Search'
                   name="search"
                 />
-                <Link to="/orders/create">
+                <Link to="/order/create">
                   <button className='bg-green-500 font-semibold text-white px-5 py-2 text-xs rounded-md'>CREATE</button>
                 </Link>
               </div>

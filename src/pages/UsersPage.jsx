@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Layout from "../components/Layout"
+import { Link } from "react-router-dom/dist"
 
 const UsersPage = () => {
   const [currentPage, setCurrentPage] = useState(1)
@@ -46,7 +47,7 @@ const UsersPage = () => {
                   placeholder='Search'
                   name="search"
                 />
-                <Link to="/users/create">
+                <Link to="/user/create">
                   <button className='bg-green-500 font-semibold text-white px-5 py-2 text-xs rounded-md'>CREATE</button>
                 </Link>
               </div>
