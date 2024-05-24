@@ -60,7 +60,7 @@ const CreateCategoryPage = () => {
 
   return (
     <Layout>
-      <div className='w-full h-screen px-10 pb-10 overflow-auto'>
+      <div className='w-full h-screen px-10 pb-10 overflow-auto bg-white'>
         <h1>New Category</h1>
 
         {/* form */}

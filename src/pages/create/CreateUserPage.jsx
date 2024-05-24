@@ -42,7 +42,7 @@ const CreateUserPage = () => {
 
   return (
     <Layout>
-      <div className='w-full h-screen px-10 pb-10 overflow-auto'>
+      <div className='w-full h-screen px-10 pb-10 overflow-auto bg-white'>
         <h1>New User</h1>
         <form onSubmit={handleSubmit} className='flex flex-col gap-5'>
           <div className='flex flex-row gap-5 items-center w-full'>

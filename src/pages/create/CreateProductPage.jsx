@@ -12,12 +12,12 @@ const CreateProductPage = () => {
   const [modal, setModal] = useState(false)
   const [input, setInput] = useState({
     title: "",
-    price: 0,
-    stock: 0,
+    price: null,
+    stock: null,
     shortDescription: "",
     SKU: "",
     category: "",
-    discount: 0,
+    discount: null,
     longDescription: "",
     image: "",
     colors: "",
@@ -94,18 +94,18 @@ const CreateProductPage = () => {
       discount: Number(input.discount),
       longDescription: input.longDescription,
       image: url,
-      colors: input.colors,
+      colors: input.colors.split(","),
       trending: false,
       additionalInformation: additionalInformation
     }
-    
+
     // TODO: conectar con el backend para crear un nuevo producto
-    
+
   }
 
   return (
     <Layout>
-      <div className='w-full h-screen px-10 pb-10 overflow-auto relative'>
+      <div className='w-full h-screen px-10 pb-10 overflow-auto relative bg-white'>
         <h1 className="font-medium text-md text-[#202224]">New Product</h1>
 
         {/* form */}
@@ -246,17 +246,21 @@ const CreateProductPage = () => {
                 placeholder='FFFFFF,eeeeee,f1f1f1'
               />
             </div>
-            <div className='flex flex-col gap-1'>
-              <label className='text-sm font-semibold' htmlFor="trending">Trending</label>
-              <input
-                type="checkbox"
-                name="trending"
-                value={input.trending}
-                onChange={handleCheckboxChange}
-                id="trending"
-                className='w-10 h-10 self-center'
-                placeholder='50'
-              />
+            <div className='flex flex-col gap-1 w-full'>
+              <label className='text-sm font-semibold'>Trending</label>
+              <label className={input.trending ? 'w-full h-[41px] border-[1px] border-slate-600 bg-green-300 flex items-center px-3 text-sm font-medium text-green-800 transition-all duration-300' : 'w-full h-[41px] border-[1px] border-slate-600 bg-red-300 flex items-center px-3 text-sm font-medium text-red-800 transition-all duration-300'} htmlFor="trending">
+                {input.trending ? "Is Trending" : "Is Not Trending"}
+                <input
+                  type="checkbox"
+                  name="trending"
+                  value={input.trending}
+                  id="trending"
+                  width={100}
+                  height={20}
+                  onChange={handleCheckboxChange}
+                  className='hidden'
+                />
+              </label>
             </div>
           </div>
 
